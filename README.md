@@ -31,11 +31,12 @@ This script tag dynamically loads the latest build of your React application.
 **Step 4: Rendering React Components**
 
 4. You can render React components within your .NET views. These components can be placed anywhere in the DOM and can receive data via props.
+   (lowercase element name in your view)
 
 **Example:**
 
 ```html
-<NavBar items="@Model.NavBar.Items" day="Thursday"></NavBar>
+<navbar items="@Model.NavBar.Items" day="Thursday"></navbar>
 ```
 
 In this example, we're rendering a `NavBar` React component and passing data to it via props. You can use server-side code (like `@Model.NavBar.Items`) or string data (like `"Thursday"`) to populate the component's props.
